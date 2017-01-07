@@ -4,8 +4,11 @@ hero = {
 }
 
 addEventListener("keydown", function(event) {
-	if (event.keyCode == 39) {
+  if (event.code == "ArrowRight") {
     hero.x = hero.x + 10;
+  }
+  if (event.code == "ArrowLeft") {
+    hero.x = hero.x - 10;
   }
 });
 
