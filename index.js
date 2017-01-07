@@ -11,7 +11,7 @@ addEventListener("keydown", function(event) {
 
 var main = function(canvas) {
   canvas.fillStyle = "red";
-  canvas.fillRect(x, y, 40, 40);
+  canvas.fillRect(hero.x, hero.y, 40, 40);
   requestAnimationFrame(function() {
     main(canvas);
   });
