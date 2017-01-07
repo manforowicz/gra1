@@ -5,7 +5,7 @@ hero = {
 
 addEventListener("keydown", function(event) {
 	if (event.keyCode == 39) {
-    x = x + 10;
+    hero.x = hero.x + 10;
   }
 });
 
