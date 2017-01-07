@@ -10,8 +10,12 @@ addEventListener("keydown", function(event) {
 });
 
 var main = function(canvas) {
-  canvas.fillStyle = "red";
-  canvas.fillRect(hero.x, hero.y, 40, 40);
+  var ctx = canvas.getContext('2d');
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
+  ctx.fillStyle = "red";
+  ctx.fillRect(hero.x, hero.y, 40, 40);
+	
   requestAnimationFrame(function() {
     main(canvas);
   });
